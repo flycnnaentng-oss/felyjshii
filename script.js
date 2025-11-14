@@ -12,12 +12,14 @@ function generateQuestion() {
     document.getElementById("feedback").textContent = "";
     document.getElementById("answer").value = "";
 
-    document.getElementById("question").textContent = ${num1} ${op} ${num2};
+    // ✅ Use backticks for template literal
+    document.getElementById("question").textContent = `${num1} ${op} ${num2}`;
 
     if (op === "+") correctAnswer = num1 + num2;
     else if (op === "-") correctAnswer = num1 - num2;
     else correctAnswer = num1 * num2;
 }
+
 
 // Check answer
 function checkAnswer() {
@@ -29,12 +31,15 @@ function checkAnswer() {
         feedback.style.color = "green";
         score++;
     } else {
-        feedback.textContent = ❌ Wrong! Correct answer: ${correctAnswer};
+        // ✅ Use backticks here too
+        feedback.textContent = `❌ Wrong! Correct answer: ${correctAnswer}`;
         feedback.style.color = "red";
     }
 
     document.getElementById("score").textContent = "Score: " + score;
 }
 
+
 // Load the first question
+
 generateQuestion();
