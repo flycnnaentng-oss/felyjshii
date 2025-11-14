@@ -8,7 +8,7 @@ body {
 }
 
 .game-container {
-    background: white;
+    background: black;
     padding: 25px;
     text-align: center;
     max-width: 330px;
@@ -65,4 +65,5 @@ button:hover {
 
 #new-question-btn:hover {
     background: #0069d9;
+
 }
