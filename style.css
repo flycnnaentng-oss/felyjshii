@@ -8,7 +8,7 @@ body {
 }
 
 .game-container {
-    background: black;
+    background: white;
     padding: 25px;
     text-align: center;
     max-width: 330px;
@@ -67,3 +67,4 @@ button:hover {
     background: #0069d9;
 
 }
+
